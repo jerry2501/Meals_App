@@ -28,7 +28,7 @@ setState(() {
   //context we cannot use in initstate
   @override
   void didChangeDependencies() {
-    if(!_loadedInitData==false){
+    if(!_loadedInitData){
       final routeArgs=ModalRoute.of(context).settings.arguments as Map<String,String>;
       categoryTitle=routeArgs['title'];
       final categoryId=routeArgs['id'];

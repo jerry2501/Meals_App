@@ -79,7 +79,6 @@ class _MyAppState extends State<MyApp> {
           title: TextStyle(fontFamily: 'RobotoCondensed',fontSize: 20,fontWeight:FontWeight.bold),
         )
       ),
-      home: TabScreen(_favouriteMeals),
       routes: {
         '/':(ctx)=>TabScreen(_favouriteMeals),
         CategoryMealsScreen.routeName:(ctx)=>CategoryMealsScreen(_availableMeals),
